@@ -1,0 +1,29 @@
+{
+  "name": "batya-sw-website",
+  "version": "1.0.0",
+  "description": "Official website for Anatoly Doletsky (Batya_SW) - Russian firefighter, international master of sport, and world record holder",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "npx live-server",
+    "test": "echo \"No tests specified yet\" && exit 0"
+  },
+  "keywords": [
+    "batya_sw",
+    "firefighter",
+    "street-workout",
+    "world-records",
+    "russia",
+    "mhs",
+    "landing-page",
+    "portfolio"
+  ],
+  "author": "Batya_SW Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipractice108/batya-sw.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
