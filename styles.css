@@ -39,6 +39,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for fixed navbar */
 }
 
 body {
@@ -191,6 +192,7 @@ a {
     justify-content: center;
     background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
     overflow: hidden;
+    padding-top: 80px; /* Compensate for fixed navbar */
 }
 
 .hero::before {
@@ -1184,6 +1186,12 @@ a {
    RESPONSIVE DESIGN
    =================================== */
 @media (max-width: 968px) {
+    .navbar {
+        position: fixed !important; /* Force fixed position on mobile */
+        top: 0 !important;
+        padding: 0.75rem 0;
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1195,6 +1203,7 @@ a {
         flex-direction: column;
         padding: var(--spacing-lg);
         transition: var(--transition-medium);
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -1203,6 +1212,7 @@ a {
 
     .nav-burger {
         display: flex;
+        z-index: 1001;
     }
 
     .nav-burger.active span:nth-child(1) {
@@ -1250,6 +1260,37 @@ a {
     :root {
         --spacing-lg: 3rem;
         --spacing-xl: 4rem;
+    }
+
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 0.6rem 1.2rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.5rem;
+        display: inline-block !important;
+        white-space: nowrap;
+    }
+
+    .hero-content {
+        padding: 2rem 0;
+    }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .brand-text {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .brand-subtitle {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 
     .hero-cta {
