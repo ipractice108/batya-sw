@@ -1232,6 +1232,10 @@ a {
         gap: var(--spacing-md);
     }
 
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
     }
@@ -1293,8 +1297,19 @@ a {
         padding: 0 1rem;
     }
 
+    .scroll-indicator {
+        bottom: 10px;
+        opacity: 0.7;
+    }
+
+    .scroll-mouse {
+        width: 24px;
+        height: 40px;
+    }
+
     .hero-cta {
         flex-direction: column;
+        margin-bottom: 4rem;
     }
 
     .btn {

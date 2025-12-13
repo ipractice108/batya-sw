@@ -263,27 +263,29 @@ yearElements.forEach(el => el.textContent = currentYear);
 // ===================================
 // PARALLAX EFFECT (Optional Enhancement)
 // ===================================
+// Disabled to keep hero section fixed and stable
+// Users reported that the moving hero was distracting
 
-let ticking = false;
+// let ticking = false;
 
-function updateParallax() {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.hero');
+// function updateParallax() {
+//     const scrolled = window.pageYOffset;
+//     const parallaxElements = document.querySelectorAll('.hero');
 
-    parallaxElements.forEach(element => {
-        const speed = 0.5;
-        element.style.transform = `translateY(${scrolled * speed}px)`;
-    });
+//     parallaxElements.forEach(element => {
+//         const speed = 0.5;
+//         element.style.transform = `translateY(${scrolled * speed}px)`;
+//     });
 
-    ticking = false;
-}
+//     ticking = false;
+// }
 
-window.addEventListener('scroll', () => {
-    if (!ticking) {
-        window.requestAnimationFrame(updateParallax);
-        ticking = true;
-    }
-});
+// window.addEventListener('scroll', () => {
+//     if (!ticking) {
+//         window.requestAnimationFrame(updateParallax);
+//         ticking = true;
+//     }
+// });
 
 // ===================================
 // STATS VISIBILITY TRACKING
