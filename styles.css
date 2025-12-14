@@ -569,8 +569,7 @@ a {
 }
 
 .detail-item {
-    display: flex;
-    gap: var(--spacing-md);
+    display: block;
     margin-bottom: var(--spacing-md);
     padding: var(--spacing-md);
     background: var(--color-gray);
@@ -581,11 +580,6 @@ a {
 .detail-item:hover {
     background: var(--color-gray-light);
     transform: translateX(10px);
-}
-
-.detail-icon {
-    font-size: 2.5rem;
-    flex-shrink: 0;
 }
 
 .detail-content h4 {

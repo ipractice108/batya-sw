@@ -169,47 +169,8 @@ document.querySelectorAll('.achievement-card, .brand-card, .media-card, .detail-
 // ===================================
 // FORM HANDLING
 // ===================================
-
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-
-        // For demo purposes, just show an alert
-        // In production, you would send this to a backend API
-        const message = currentLang === 'ru'
-            ? 'Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.'
-            : 'Thank you for your message! We will contact you soon.';
-
-        alert(message);
-        contactForm.reset();
-
-        // Here you would typically send the form data to your backend:
-        /*
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                alert(message);
-                contactForm.reset();
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Error sending message. Please try again.');
-        }
-        */
-    });
-}
+// Form is now handled by FormSubmit.co service
+// No client-side JavaScript needed - form submits directly to email
 
 // ===================================
 // COUNTER ANIMATION
