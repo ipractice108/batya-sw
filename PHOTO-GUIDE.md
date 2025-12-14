@@ -5,7 +5,7 @@
 
 ---
 
-## 🔥 ОБЯЗАТЕЛЬНЫЕ ФОТОГРАФИИ (минимум)
+## 🔥 ОБЯЗАТЕЛЬНЫЕ ФОТОГРАФИИ (6 фото - минимум)
 
 ### 1. **hero-background.jpg**
 - **Что:** Фоновое изображение главной секции
@@ -69,27 +69,40 @@
 
 ---
 
+### 6. **social-media-views.jpg**
+- **Что:** Скриншот или фото со статистикой просмотров в соцсетях
+- **Описание:** Демонстрация популярности в TikTok/YouTube
+- **Размер:** 1200x800px (горизонтальная, 3:2)
+- **Формат:** JPG (до 200KB)
+- **Пример сюжета:**
+  - Скриншот TikTok/YouTube с высокими просмотрами
+  - Batya снимает видео на камеру/телефон
+  - Коллаж из популярных видео
+  - Момент съёмки контента
+
+---
+
 ## ✨ ДОПОЛНИТЕЛЬНЫЕ ФОТОГРАФИИ (рекомендуется)
 
-### 6. **training-action-1.jpg**
+### 7. **training-action-1.jpg**
 - Любое эффектное фото тренировки
 - 1200x800px, JPG, до 200KB
 
-### 7. **training-action-2.jpg**
+### 8. **training-action-2.jpg**
 - Ещё одно фото тренировки (другой ракурс/упражнение)
 - 1200x800px, JPG, до 200KB
 
-### 8. **mhs-service.jpg**
+### 9. **mhs-service.jpg**
 - Batya на рабочем месте в МЧС
 - 1200x800px, JPG, до 200KB
 - Демонстрирует профессиональную деятельность
 
-### 9. **youth-training.jpg**
+### 10. **youth-training.jpg**
 - Работа с молодёжью, тренировки детей
 - 1200x800px, JPG, до 200KB
 - Гуманистическая миссия
 
-### 10. **records-ceremony.jpg**
+### 11. **records-ceremony.jpg**
 - Момент установления рекорда или награждение
 - 1200x800px, JPG, до 200KB
 - Официальное признание достижений
@@ -138,16 +151,20 @@ cp ваши-фото/* /home/user/batya-sw/images/
 
 ## 📝 Чек-лист фотографий
 
+### Обязательные:
 - [ ] hero-background.jpg (1920x1080+, <300KB)
 - [ ] portrait-main.jpg (800x1200, <200KB)
 - [ ] achievement-axes-plank.jpg (1200x800, <200KB)
 - [ ] achievement-turkish-getup.jpg (1200x800, <200KB)
 - [ ] achievement-full-gear.jpg (1200x800, <200KB)
-- [ ] training-action-1.jpg (опционально)
-- [ ] training-action-2.jpg (опционально)
-- [ ] mhs-service.jpg (опционально)
-- [ ] youth-training.jpg (опционально)
-- [ ] records-ceremony.jpg (опционально)
+- [ ] social-media-views.jpg (1200x800, <200KB)
+
+### Опциональные:
+- [ ] training-action-1.jpg
+- [ ] training-action-2.jpg
+- [ ] mhs-service.jpg
+- [ ] youth-training.jpg
+- [ ] records-ceremony.jpg
 
 ---
 

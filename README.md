@@ -110,12 +110,13 @@ php -S localhost:8000
 
 ### Быстрый старт:
 
-1. Подготовьте **5 обязательных фотографий** (минимум):
+1. Подготовьте **6 обязательных фотографий** (минимум):
    - `hero-background.jpg` - Фон главной секции (1920x1080px)
    - `portrait-main.jpg` - Портрет для "О себе" (800x1200px)
    - `achievement-axes-plank.jpg` - Планка на топорах (1200x800px)
    - `achievement-turkish-getup.jpg` - Турецкий подъём (1200x800px)
    - `achievement-full-gear.jpg` - В экипировке (1200x800px)
+   - `social-media-views.jpg` - Миллионы просмотров (1200x800px)
 
 2. Скопируйте их в папку `images/`:
    ```bash
