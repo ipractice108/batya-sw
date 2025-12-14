@@ -325,6 +325,49 @@ if ('IntersectionObserver' in window) {
 }
 
 // ===================================
+// HANDLE MISSING IMAGES
+// ===================================
+
+// Hide card-image containers when image fails to load
+document.addEventListener('DOMContentLoaded', () => {
+    const cardImages = document.querySelectorAll('.card-image img');
+
+    cardImages.forEach(img => {
+        img.addEventListener('error', function() {
+            // Hide the entire card-image container when image fails to load
+            const cardImageContainer = this.closest('.card-image');
+            if (cardImageContainer) {
+                cardImageContainer.style.display = 'none';
+            }
+        });
+
+        // Also check if image is already loaded
+        if (img.complete && img.naturalHeight === 0) {
+            const cardImageContainer = img.closest('.card-image');
+            if (cardImageContainer) {
+                cardImageContainer.style.display = 'none';
+            }
+        }
+    });
+
+    // Handle hero background image
+    const heroBgImage = document.querySelector('.hero-bg-image');
+    if (heroBgImage) {
+        heroBgImage.addEventListener('error', function() {
+            this.style.display = 'none';
+        });
+    }
+
+    // Handle portrait image
+    const portraitImage = document.querySelector('.about-portrait');
+    if (portraitImage) {
+        portraitImage.addEventListener('error', function() {
+            this.style.opacity = '0';
+        });
+    }
+});
+
+// ===================================
 // SCROLL TO TOP BUTTON (Optional)
 // ===================================
 

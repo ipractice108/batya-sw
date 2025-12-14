@@ -654,6 +654,8 @@ a {
     margin: calc(-1 * var(--spacing-md)) calc(-1 * var(--spacing-md)) var(--spacing-md);
     overflow: hidden;
     border-radius: 8px 8px 0 0;
+    background: linear-gradient(135deg, var(--color-gray-light), var(--color-gray));
+    transition: var(--transition-medium);
 }
 
 .card-image img {
@@ -662,10 +664,16 @@ a {
     object-fit: cover;
     object-position: center;
     transition: var(--transition-slow);
+    display: block;
 }
 
 .achievement-card:hover .card-image img {
     transform: scale(1.05);
+}
+
+/* Smooth transition when image loads */
+.card-image img[src] {
+    animation: fadeIn 0.5s ease-in;
 }
 
 .achievement-card.featured {
